@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "who's_da_boss300.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

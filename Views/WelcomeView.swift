@@ -1,6 +1,8 @@
 import SwiftUI
-
+import FirebaseAuth
 struct WelcomeView: View {
+    @State private var signingInAnonymously = false
+    @State private var navigateToGuest = false
     var body: some View {
         NavigationStack {
             ZStack {
@@ -29,13 +31,38 @@ struct WelcomeView: View {
                 
                     Spacer().frame(height: 30)
                 
-                    NavigationLink(destination: GuestEntryView()) {
-                        GlassButton(
-                            title: "Play as Guest",
-                            icon: "person.fill"
-                        )
+//                    NavigationLink(destination: GuestEntryView()) {
+//                        GlassButton(
+//                            title: "Play as Guest",
+//                            icon: "person.fill"
+//                        )
+//                    }
+                    
+                    GlassActionButton(title: signingInAnonymously ? "Signing in ... " : "Play as Guest", icon: "person.fill") {
+                        signingInAnonymously = true
+                        if Auth.auth().currentUser == nil {
+                            Auth.auth().signInAnonymously { result, error in
+                                signingInAnonymously = false
+                                if let error = error {
+                                    print("Error: ", error.localizedDescription)
+                                    return
+                                } else {
+                                    print("Signed in as user: ", result?.user.uid ?? "Anonymous")
+                                    navigateToGuest = true
+                                }
+                            }
+                        } else {
+                            signingInAnonymously = false
+                            navigateToGuest = true
+                        }
                     }
-                
+                    
+                    NavigationLink(
+                        destination: GuestEntryView(),
+                        isActive: $navigateToGuest
+                    ) {
+                        EmptyView()
+                    }
                 
                     GlassButton(title: "Log In / Sign Up", icon: "lock.fill")
                 

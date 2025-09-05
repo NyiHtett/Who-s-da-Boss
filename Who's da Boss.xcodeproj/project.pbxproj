@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		508C77DF2E4DAA5600647FA6 /* final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 508C77DE2E4DAA5600647FA6 /* final.mp4 */; };
+		508C78292E5B756D00647FA6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 508C78282E5B756D00647FA6 /* FirebaseStorage */; };
 		50BB4D162E4719A80038CF2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50BB4D152E4719A80038CF2A /* GoogleService-Info.plist */; };
 		50BB4D192E471AEE0038CF2A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 50BB4D182E471AEE0038CF2A /* FirebaseAuth */; };
 		50BB4D1B2E471AEE0038CF2A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 50BB4D1A2E471AEE0038CF2A /* FirebaseCore */; };
@@ -31,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		508C77DE2E4DAA5600647FA6 /* final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = final.mp4; sourceTree = "<group>"; };
 		50BB4CE32E4708590038CF2A /* Who's da Boss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who's da Boss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BB4CF02E47085B0038CF2A /* Who's da BossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Who's da BossTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BB4CFA2E47085B0038CF2A /* Who's da BossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Who's da BossUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BB4D1B2E471AEE0038CF2A /* FirebaseCore in Frameworks */,
+				508C78292E5B756D00647FA6 /* FirebaseStorage in Frameworks */,
 				50BB4D192E471AEE0038CF2A /* FirebaseAuth in Frameworks */,
 				50BB4D1D2E471AEE0038CF2A /* FirebaseFirestore in Frameworks */,
 			);
@@ -109,6 +113,7 @@
 				50BB4CF32E47085B0038CF2A /* Who's da BossTests */,
 				50BB4CFD2E47085B0038CF2A /* Who's da BossUITests */,
 				50BB4CE42E4708590038CF2A /* Products */,
+				508C77DE2E4DAA5600647FA6 /* final.mp4 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +153,7 @@
 				50BB4D182E471AEE0038CF2A /* FirebaseAuth */,
 				50BB4D1A2E471AEE0038CF2A /* FirebaseCore */,
 				50BB4D1C2E471AEE0038CF2A /* FirebaseFirestore */,
+				508C78282E5B756D00647FA6 /* FirebaseStorage */,
 			);
 			productName = "Who's da Boss";
 			productReference = 50BB4CE32E4708590038CF2A /* Who's da Boss.app */;
@@ -251,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508C77DF2E4DAA5600647FA6 /* final.mp4 in Resources */,
 				50BB4D162E4719A80038CF2A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,9 +445,11 @@
 				DEVELOPMENT_TEAM = 5S9VPB4C63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Who-s-da-Boss-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,9 +475,11 @@
 				DEVELOPMENT_TEAM = 5S9VPB4C63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Who-s-da-Boss-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -605,6 +616,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		508C78282E5B756D00647FA6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50BB4D172E471A0B0038CF2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		50BB4D182E471AEE0038CF2A /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 50BB4D172E471A0B0038CF2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

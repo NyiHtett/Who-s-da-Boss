@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Image</key>
+    <string></string>
+
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIColorName</key>
+        <string>launch-screen-background</string>
+        <key>UIImageName</key>
+        <string>logo</string>
+        <key>UILaunchScreen</key>
+        <dict/>
+    </dict>
+
+    <!-- Required for using the camera -->
+    <key>NSCameraUsageDescription</key>
+    <string>We use your selfie as your in-game avatar so friends can recognize you.</string>
+
+    <!-- Recommended if you allow picking from the photo library (our fallback) -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Allow choosing a selfie from your photo library.</string>
+
+    <!-- Only if you save photos to the user's library (not just pick) -->
+    <!--
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Allow saving your selfie to your photo library.</string>
+    -->
+</dict>
+</plist>
